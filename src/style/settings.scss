@@ -1,0 +1,132 @@
+.settings {
+    padding: 1rem;
+    background-color: #1b1e25;
+    color: #ffffff;
+
+    &__main {
+        background-color: #1b1e25;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        position: relative;
+
+        .settings__back-link {
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    &__back-link {
+        color: #ffffff;
+        font-size: 1.5rem;
+
+        svg {
+            width: 26px;
+            height: 26px;
+        }
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__article {
+        width: 90%;
+        margin: auto;
+    }
+
+    &__profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #1b1e25;
+        border-radius: 12px;
+
+        &-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        &-image {
+            width: 60px;
+            height: 60px;
+            background-color: #1b1e25;
+        }
+
+        &-name {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        &-role {
+            display: block;
+            font-size: 0.9rem;
+            color: #808080;
+            font-weight: normal;
+        }
+    }
+
+    &__account,
+    &__privacy {
+        &-title {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+    }
+
+    &__menu {
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #1b1e25;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &-content {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+            background-color: #1b1e25;
+        }
+
+        &-text {
+            font-size: 1.125rem;
+            color: #ffffff;
+            font-weight: 500;
+        }
+    }
+
+    &__arrow {
+        color: #fff;
+        width: 26px;
+        height: 26px;
+    }
+}
