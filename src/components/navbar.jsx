@@ -24,7 +24,7 @@ const Navbar = () => {
                         <BsBookmarkDashFill className='exploreicon' />
                     </Link>
 
-                    <Link to="/profile" className={`nav-link ${location.pathname === '/profile' ? 'active' : ''}`}>
+                    <Link to="/settings" className={`nav-link ${location.pathname === '/settings' ? 'active' : ''}`}>
                         <IoPerson className='exploreicon' />
                     </Link>
                 </div>
