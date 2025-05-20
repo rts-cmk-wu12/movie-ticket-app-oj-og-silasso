@@ -26,6 +26,11 @@ function Explore() {
                     <h1>Top Movies</h1>
                     <p>See more</p>
                 </div>
+                <div className="explore-movies-container">
+                    <div className="explore-movie">
+                        
+                    </div>
+                </div>
             </div>
             <Navbar />
         </>
