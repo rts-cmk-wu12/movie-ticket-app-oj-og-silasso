@@ -1,6 +1,8 @@
   .navbar {
       position: fixed;
       bottom: 0;
+      left: 0;
+      right: 0;
       width: 100%;
       background-color: #1b1e25;
       padding: 1rem;
@@ -20,7 +22,8 @@
                   color: #636882;
                   text-decoration: none;
 
-                  .homeicon, .exploreicon {
+                  .homeicon,
+                  .exploreicon {
                       font-size: 1.5em;
                   }
 
