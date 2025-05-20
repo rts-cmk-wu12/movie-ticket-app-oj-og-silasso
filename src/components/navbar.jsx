@@ -1,9 +1,12 @@
 import React from 'react';
 import '../style/navbar.scss';
 import { Link, useLocation } from 'react-router-dom';
-import { MdHomeFilled, MdExplore } from "react-icons/md";
-import { BsBookmarkDashFill } from "react-icons/bs";
-import { IoPerson } from "react-icons/io5";
+import HomeIcon from '../pic/icons/home.svg?react';
+import ExploreIcon from '../pic/icons/explore.svg?react';
+import BookmarkIcon from '../pic/icons/bookmark.svg?react';
+import PersonIcon from '../pic/icons/person.svg?react';
+
+
 
 const Navbar = () => {
     const location = useLocation();
@@ -13,19 +16,19 @@ const Navbar = () => {
             <div className="navbar-container">
                 <div className="navbar-icons">
                     <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>
-                        <MdHomeFilled className='homeicon' />
+                     <HomeIcon />
                     </Link>
 
                     <Link to="/explore" className={`nav-link ${location.pathname === '/explore' ? 'active' : ''}`}>
-                        <MdExplore className='exploreicon' />
+                        <ExploreIcon />
                     </Link>
 
                     <Link to="/bookmarks" className={`nav-link ${location.pathname === '/bookmarks' ? 'active' : ''}`}>
-                        <BsBookmarkDashFill className='exploreicon' />
+                        <BookmarkIcon />
                     </Link>
 
                     <Link to="/settings" className={`nav-link ${location.pathname === '/settings' ? 'active' : ''}`}>
-                        <IoPerson className='exploreicon' />
+                        <PersonIcon />
                     </Link>
                 </div>
             </div>

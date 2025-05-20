@@ -19,16 +19,8 @@
               align-items: center;
 
               .nav-link {
-                  color: #636882;
-                  text-decoration: none;
-
-                  .homeicon,
-                  .exploreicon {
-                      font-size: 1.5em;
-                  }
-
-                  &.active {
-                      color: #4d97cd;
+                  &.active * {
+                      fill: #54a8e5;
                   }
               }
           }
