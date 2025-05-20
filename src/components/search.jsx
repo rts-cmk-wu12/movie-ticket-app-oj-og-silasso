@@ -3,7 +3,7 @@
   import { IoIosSearch } from "react-icons/io";
   import { useNavigate } from 'react-router-dom';
 
-  const API_KEY = '30eb2436721e0aa49634943c649145f6';
+  const API_KEY = '8c9bb1fd937a32001ededb5432e9e153';
   const BASE_URL = 'https://api.themoviedb.org/3';
   const SEARCH_URL = `${BASE_URL}/search/movie?api_key=${API_KEY}`;
 

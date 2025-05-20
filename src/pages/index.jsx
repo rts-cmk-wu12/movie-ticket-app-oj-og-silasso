@@ -14,7 +14,7 @@ function Forside() {
                         <p>Welcome Back,</p>
                         <h1>Osysyy</h1>
                     </div>
-                    <img src="src\pic\bruger.png" alt="" />
+                    <img src="src\pic\bruger.svg" alt="" />
                 </div>
                 <Search />
                 <div className="movie-container">

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import '../style/movies.scss';
 import { useNavigate } from 'react-router-dom';
 
-const API_KEY = '30eb2436721e0aa49634943c649145f6';
+const API_KEY = '8c9bb1fd937a32001ededb5432e9e153';
 const BASE_URL = 'https://api.themoviedb.org/3';
 const UPCOMING_URL = `${BASE_URL}/movie/upcoming?api_key=${API_KEY}`;
 const MovieSlideshow = () => {

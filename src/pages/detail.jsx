@@ -10,7 +10,7 @@ import { BsBookmarkDash } from "react-icons/bs";
 const Detail = () => {
     const [movieDetail, setMovieDetail] = useState({});
     const [director, setDirector] = useState("");
-    const API_KEY = '30eb2436721e0aa49634943c649145f6';
+    const API_KEY = '8c9bb1fd937a32001ededb5432e9e153';
     const { id } = useParams();
 
     useEffect(() => {
