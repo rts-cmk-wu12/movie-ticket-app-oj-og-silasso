@@ -5,6 +5,7 @@ import './style/index.scss';
 import Settings from './pages/settings.jsx';
 import Explore from './pages/explore.jsx';
 import Bookmark from './pages/bookmark.jsx';
+import Ticket from './pages/ticketbooking.jsx';
 
 function App() {
 
@@ -16,6 +17,8 @@ function App() {
         <Route path="/detail/:id" element={<Detail />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/bookmarks" element={<Bookmark />} />
+        <Route path="/ticket" element={<Ticket />} />
+        
 
       </Routes>
     </>

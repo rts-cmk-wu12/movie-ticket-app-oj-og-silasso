@@ -1,0 +1,35 @@
+.ticket {
+    padding: 1em;
+    background-color: #1b1e25;
+    color: #ffffff;
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        align-items: center;
+        margin-bottom: 0.5em;
+        position: relative;
+
+        .ticket__back-link {
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    &__back-link {
+        color: white;
+        font-size: 2em;
+
+        svg {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        font-size: 1.5em;
+        font-weight: 600;
+        margin: 0;
+    }
+}

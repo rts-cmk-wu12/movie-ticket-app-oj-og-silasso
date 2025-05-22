@@ -26,15 +26,12 @@ const cinemas = [
 const PopularMovies = () => {
     const navigate = useNavigate();
 
-    const handleCinemaClick = (cinemaId) => {
-        navigate(`/cinema/${cinemaId}`);
-    };
 
     return (
         <div className="cinema-container">
             <div className="cinemas-grid">
                 {cinemas.map((cinema) => (
-                    <div key={cinema.id} className="cinema-card" onClick={() => handleCinemaClick(cinema.id)}>
+                    <div key={cinema.id} className="cinema-card">
                         <div className="cinema-card-inner">
                             <div className="cinema-image-wrapper">
                                 <img

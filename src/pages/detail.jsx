@@ -116,9 +116,8 @@ const Detail = () => {
                 </div>
             </div>
             <div className="book-ticket-container">
-                <button className="book-ticket-button">Book Ticket</button>
-            </div>
-        </>
+                <Link to="/ticket" className="book-ticket-button">Book Ticket</Link>
+            </div>        </>
     );
 };
 

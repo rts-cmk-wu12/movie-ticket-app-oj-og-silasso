@@ -115,7 +115,7 @@
     background-color: #1a1d24;
 }
 
-.book-ticket-button {
+a.book-ticket-button {
     width: 100%;
     padding: 1rem;
     background-color: #54a8e5;
@@ -124,4 +124,7 @@
     border-radius: 10px;
     font-size: 1.1rem;
     font-weight: 500;
+    text-decoration: none;
+    display: block;
+    text-align: center;
 }
