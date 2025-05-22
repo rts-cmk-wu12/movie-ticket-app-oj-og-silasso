@@ -1,0 +1,72 @@
+.bookmark {
+    padding: 1rem;
+    background-color: #1b1e25;
+    color: #ffffff;
+
+    &__main {
+        background-color: #1b1e25;
+
+        * {
+            text-decoration: none;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        position: relative;
+
+        .settings__back-link {
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    &__back-link {
+        color: #ffffff;
+        font-size: 1.5rem;
+
+        svg {
+            width: 26px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+        }
+    }
+&__poster {
+    display: flex;
+    align-items: center;
+}
+
+ &__genres span {
+            color: #54A8E5;
+        }
+    &__movie {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+       
+&-title {
+    color: #ffffff;
+}
+        &-rating {
+            display: flex;
+            gap: 0.15rem;
+            align-items: center;
+            color: #FFA235;
+
+            span {
+                color: #BABFC9;
+            }
+        }
+    }
+   &__date {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+   }
+}
