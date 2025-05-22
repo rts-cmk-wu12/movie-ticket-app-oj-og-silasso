@@ -1,7 +1,8 @@
-.movie-grid {
+.movies-grid {
     width: 100%;
     overflow-x: auto;
     display: flex;
+    
     gap: 1em;
     padding: 10px;
 
@@ -19,13 +20,13 @@
             color: #ffa235;
         }
 
-        h3 {
+        .movie-heading {
             margin: 0;
             font-size: 16px;
             font-weight: 500;
         }
 
-        p {
+        .release-date {
             margin: 5px 0;
             font-size: 1em;
             color: #666;
