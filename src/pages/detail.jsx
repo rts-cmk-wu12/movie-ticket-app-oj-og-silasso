@@ -4,12 +4,13 @@ import { useParams } from 'react-router-dom';
 import '../style/detail.scss';
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom';
-import { BsBookmarkDash } from "react-icons/bs";
+import { BsBookmarkDash, BsBookmarkFill } from "react-icons/bs";
 
 
 const Detail = () => {
     const [movieDetail, setMovieDetail] = useState({});
     const [director, setDirector] = useState("");
+    const [isBookmarked, setIsBookmarked] = useState(false);
     const API_KEY = '8c9bb1fd937a32001ededb5432e9e153';
     const { id } = useParams();
 
@@ -24,7 +25,48 @@ const Detail = () => {
                 const director = data.crew.find(member => member.job === "Director");
                 setDirector(director ? director.name : "");
             });
+            
+    
+        const bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+        const isAlreadyBookmarked = bookmarks.some(bookmark => bookmark.id === parseInt(id));
+        setIsBookmarked(isAlreadyBookmarked);
     }, [id, API_KEY]);
+
+    const formatDate = (date) => {
+        const day = date.getDate().toString().padStart(2, '0');
+        const month = (date.getMonth() + 1).toString().padStart(2, '0');
+        const year = date.getFullYear();
+        return `${day}-${month}-${year}`;
+    };
+
+    const handleBookmark = () => {
+        const bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+        
+        if (isBookmarked) {
+         
+            const updatedBookmarks = bookmarks.filter(bookmark => bookmark.id !== movieDetail.id);
+            localStorage.setItem('bookmarks', JSON.stringify(updatedBookmarks));
+            setIsBookmarked(false);
+        } else {
+
+            const currentDate = new Date();
+            const formattedDate = formatDate(currentDate); 
+            
+            const movieToBookmark = {
+                id: movieDetail.id,
+                title: movieDetail.title,
+                poster_path: movieDetail.poster_path,
+                vote_average: movieDetail.vote_average,
+                runtime: movieDetail.runtime,
+                genres: movieDetail.genres,
+                bookmarkedDate: formattedDate
+            };
+            
+            bookmarks.push(movieToBookmark);
+            localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+            setIsBookmarked(true);
+        }
+    };
 
     return (
         <>
@@ -34,7 +76,11 @@ const Detail = () => {
                     <div className="detail-header-title">
                         <h1 className="detail-header-title-text">Details Movie</h1>
                     </div>
-                    <BsBookmarkDash className="detail-bookmark-icon" />
+                    {isBookmarked ? (
+                        <BsBookmarkFill id='bookmark' className="detail-bookmark-icon active" onClick={handleBookmark} />
+                    ) : (
+                        <BsBookmarkDash id='bookmark' className="detail-bookmark-icon" onClick={handleBookmark} />
+                    )}
                 </div>
             </header>
             {movieDetail.poster_path && (
