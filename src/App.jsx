@@ -6,6 +6,7 @@ import Settings from './pages/settings.jsx';
 import Explore from './pages/explore.jsx';
 import Bookmark from './pages/bookmark.jsx';
 import Ticket from './pages/ticketbooking.jsx';
+import PopupPayment from './components/popup-payment.jsx';
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
         <Route path="/settings" element={<Settings />} />
         <Route path="/bookmarks" element={<Bookmark />} />
         <Route path="/ticket" element={<Ticket />} />
+        <Route path="/popup" element={<PopupPayment />} />
+
         
 
       </Routes>
