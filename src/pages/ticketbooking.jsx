@@ -1,7 +1,9 @@
 import { IoIosArrowBack } from 'react-icons/io';
 import '../style/ticket.scss';
+import '../style/validation.scss';
 import { Link, useNavigate } from 'react-router-dom';
 import Seats from '../components/seats';
+import { useState } from 'react';
 
 const cinemas = [
     { id: 1, name: "Viva Cinema" },
@@ -10,9 +12,26 @@ const cinemas = [
 
 function Ticket() {
     const navigate = useNavigate();
+    const [selectedCinema, setSelectedCinema] = useState('');
+
+    const [error, setError] = useState('');
 
     const handleBack = () => {
         navigate(-1);
+    };
+
+    const handleCinemaChange = (e) => {
+        setSelectedCinema(e.target.value);
+        setError('');
+    };
+
+    const handleCheckout = (e) => {
+        e.preventDefault();
+        if (!selectedCinema) {
+            setError('Please select a cinema');
+            return;
+        }
+        navigate('/checkout');
     };
 
     return (
@@ -25,8 +44,11 @@ function Ticket() {
             </header>
             <div className="ticket__selection">
                 <p className="ticket__label">Cinema</p>
-                <select className="ticket__cinema-select">
-
+                <select 
+                    className="ticket__cinema-select"
+                    value={selectedCinema}
+                    onChange={handleCinemaChange}
+                >
                     <option value="">Select Cinema</option>
                     {cinemas.map(cinema => (
                         <option key={cinema.id} value={cinema.id}>
@@ -56,11 +78,13 @@ function Ticket() {
                     </div>
                 </div>
                 <div className="ticket__seats">
-                  <Seats />  
+                    <Seats />  
                 </div>
+                {error && <p className="ticket__error">{error}</p>}
                 <div className="ticket__checkout">
-                <Link to="/checkout" className="ticket__book-button">Checkout</Link>
-            </div>
+                   
+                    <button onClick={handleCheckout} className="ticket__book-button">Checkout</button>
+                </div>
             </div>
         </>
     );
