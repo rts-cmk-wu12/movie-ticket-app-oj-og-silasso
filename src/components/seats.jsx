@@ -40,66 +40,66 @@ function Seats() {
             <div className="seats__container">
                 <span className="seats__bluelineglow"><img src="src\pic\bluelineglow.png" alt="" /></span>
                 <div className="seats__row">
-                    {renderSeat('1', false)}
-                    {renderSeat('2', false)}
-                    {renderSeat('3', false)}
+                    {renderSeat('A1', false)}
+                    {renderSeat('A2', false)}
+                    {renderSeat('A3', false)}
                     <div className="seats__spacer"></div>
-                    {renderSeat('4', false)}
-                    {renderSeat('5', false)}
-                    {renderSeat('6', false)}
+                    {renderSeat('A4', false)}
+                    {renderSeat('A5', false)}
+                    {renderSeat('A6', false)}
                 </div>
                 <div className="seats__row">
-                    {renderSeat('7', false)}
-                    {renderSeat('8', false)}
-                    {renderSeat('9', false)}
-                    {renderSeat('10', false)}
+                    {renderSeat('B1', false)}
+                    {renderSeat('B2', false)}
+                    {renderSeat('B3', false)}
+                    {renderSeat('B4', false)}
                     <div className="seats__spacer"></div>
-                    {renderSeat('11', false)}
-                    {renderSeat('12', false)}
-                    {renderSeat('13', false)}
-                    {renderSeat('14', false)}
+                    {renderSeat('B5', false)}
+                    {renderSeat('B6', false)}
+                    {renderSeat('B7', false)}
+                    {renderSeat('B8', false)}
                 </div>
                 <div className="seats__row">
-                    {renderSeat('15', false)}
-                    {renderSeat('16', false)}
-                    {renderSeat('17', false)}
-                    {renderSeat('18', false)}
+                    {renderSeat('C1', false)}
+                    {renderSeat('C2', false)}
+                    {renderSeat('C3', false)}
+                    {renderSeat('C4', false)}
                     <div className="seats__spacer"></div>
-                    {renderSeat('19', false)}
-                    {renderSeat('20', false)}
-                    {renderSeat('21', false)}
-                    {renderSeat('22', false)}
+                    {renderSeat('C5', false)}
+                    {renderSeat('C6', false)}
+                    {renderSeat('C7', false)}
+                    {renderSeat('C8', false)}
                 </div>
                 <div className="seats__row">
-                    {renderSeat('23', true)}
-                    {renderSeat('24', true)}
-                    {renderSeat('25', true)}
-                    {renderSeat('26', true)}
+                    {renderSeat('D1', true)}
+                    {renderSeat('D2', true)}
+                    {renderSeat('D3', true)}
+                    {renderSeat('D4', true)}
                     <div className="seats__spacer"></div>
-                    {renderSeat('27', true)}
-                    {renderSeat('28', true)}
-                    {renderSeat('29', true)}
-                    {renderSeat('30', true)}
+                    {renderSeat('D5', true)}
+                    {renderSeat('D6', true)}
+                    {renderSeat('D7', true)}
+                    {renderSeat('D8', true)}
                 </div>
                 <div className="seats__row">
-                    {renderSeat('31', true)}
-                    {renderSeat('32', true)}
-                    {renderSeat('33', true)}
-                    {renderSeat('34', true)}
+                    {renderSeat('E1', true)}
+                    {renderSeat('E2', true)}
+                    {renderSeat('E3', true)}
+                    {renderSeat('E4', true)}
                     <div className="seats__spacer"></div>
-                    {renderSeat('35', true)}
-                    {renderSeat('36', true)}
-                    {renderSeat('37', true)}
-                    {renderSeat('38', true)}
+                    {renderSeat('E5', true)}
+                    {renderSeat('E6', true)}
+                    {renderSeat('E7', true)}
+                    {renderSeat('E8', true)}
                 </div>
                 <div className="seats__row">
-                    {renderSeat('39', false)}
-                    {renderSeat('40', false)}
-                    {renderSeat('41', false)}
+                    {renderSeat('F1', false)}
+                    {renderSeat('F2', false)}
+                    {renderSeat('F3', false)}
                     <div className="seats__spacer"></div>
-                    {renderSeat('42', false)}
-                    {renderSeat('43', false)}
-                    {renderSeat('44', false)}
+                    {renderSeat('F4', false)}
+                    {renderSeat('F5', false)}
+                    {renderSeat('F6', false)}
                 </div>
             </div>
 

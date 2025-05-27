@@ -17,7 +17,12 @@ const Detail = () => {
     useEffect(() => {
         fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=en-US`)
             .then(response => response.json())
-            .then(data => setMovieDetail(data));
+            .then(data => {
+                setMovieDetail(data);
+               
+                localStorage.setItem('movieId', id);
+                localStorage.setItem('movieTitle', data.title);
+            });
 
         fetch(`https://api.themoviedb.org/3/movie/${id}/credits?api_key=${API_KEY}`)
             .then(response => response.json())

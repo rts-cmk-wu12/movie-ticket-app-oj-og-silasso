@@ -12,7 +12,9 @@ const cinemas = [
 
 function Ticket() {
     const navigate = useNavigate();
-    const [selectedCinema, setSelectedCinema] = useState('');
+    const [selectedCinema, setSelectedCinema] = useState(() => {
+        return localStorage.getItem('selectedCinema') || '';
+    });
 
     const [error, setError] = useState('');
 
@@ -22,6 +24,7 @@ function Ticket() {
 
     const handleCinemaChange = (e) => {
         setSelectedCinema(e.target.value);
+        localStorage.setItem('selectedCinema', e.target.value);
         setError('');
     };
 
@@ -51,7 +54,7 @@ function Ticket() {
                 >
                     <option value="">Select Cinema</option>
                     {cinemas.map(cinema => (
-                        <option key={cinema.id} value={cinema.id}>
+                        <option key={cinema.id} value={cinema.name}>
                             {cinema.name}
                         </option>
                     ))}

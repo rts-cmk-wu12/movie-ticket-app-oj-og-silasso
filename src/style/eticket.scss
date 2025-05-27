@@ -1,77 +1,167 @@
 .eticket {
-    padding: 1rem;
-    background-color: #1b1e25;
-    color: #ffffff;
+  padding: 1rem;
+  background-color: #1b1e25;
+  color: #ffffff;
 
-    &__main {
-        background-color: #1b1e25;
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1rem;
+
+    &-back {
+      position: absolute;
+      left: 0;
+      color: #ffffff;
+      font-size: 1.5rem;
     }
 
-    &__nav {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        align-items: center;
-        margin-bottom: 0.5rem;
-        position: relative;
-
-        .eticket__back-link {
-            position: absolute;
-            left: 0;
-        }
+    &-title {
+      font-size: 1.25rem;
+      font-weight: 600;
     }
-
-    &__back-link {
-        color: #ffffff;
-        font-size: 1.5rem;
-
-        svg {
-            width: 26px;
-            height: 26px;
-            display: flex;
-            align-items: center;
-        }
-    }
-    &-content {
-        width: 90%;
-        margin: 0 auto;
-    &__instruction {
-        &-title {
-        }
-        &-text {}
-    }
-
-    &__details {}
-
-    &__ticket {
-        background-color: #ffffff;
-        border-radius: 0 0 20px 20px;
-    }
-
-    &__film {
-        &-title {}
-        &-name {}
-    }
-
-    &__info {
-        &-list {} 
-        &-item {
-            color: #717171;
-            list-style: none;
-        }
-        &-value {
-            color: #000000;
-        }
-    }
-
-    &__qrcode {
-        background-color: #ffffff;
-        border-radius: 20px 20px 0 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  }
 }
 
+.eticket-content {
+  width: 90%;
+  margin: 0 auto;
 
+
+.eticket-content__button {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+  }
+  &__instruction {
+    margin-bottom: 1.5rem;
+
+    &-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    &-text {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: #c4c4c4;
+    }
+  }
+
+  &__details {
+    background-color: transparent;
+  }
+
+  &__ticket {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  }
+
+  &__film {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+
+    &-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #000000;
+    }
+
+    &-name {
+      color: #f43f5e; 
+      font-weight: 500;
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 2rem;
+    width: 90%;
+    margin: 0 auto;
+
+    &-list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: contents;
+    }
+
+    &-item {
+      font-size: 0.85rem;
+      color: #717171;
+
+      p {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+
+        span {
+          color: #000000;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  &__qrcode {
+    background-color: #ffffff;
+    border-radius: 0 0 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #1b1e25;
+      border-radius: 50%;
+      top: -10px;
+    }
+
+    &::before {
+      left: 0;
+      transform: translateX(-50%);
+    }
+
+    &::after {
+      right: 0;
+      transform: translateX(50%);
+    }
+
+    svg {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+}
+
+.download-button {
+  background-color: #54a8e5;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+  margin-top: 1rem;
 }
