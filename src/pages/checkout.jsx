@@ -14,7 +14,7 @@ function Checkout() {
         email: '',
         cardholderName: '',
         cardNumber: '',
-        date: new Date().toISOString().split('T')[0],
+        date: '',
         cvv: ''
     });
     const [errors, setErrors] = useState({});
