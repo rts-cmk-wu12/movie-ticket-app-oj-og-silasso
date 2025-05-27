@@ -7,6 +7,7 @@ import Explore from './pages/explore.jsx';
 import Bookmark from './pages/bookmark.jsx';
 import Ticket from './pages/ticketbooking.jsx';
 import Checkout from './pages/checkout.jsx';
+import ETicket from './pages/eticket.jsx';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/bookmarks" element={<Bookmark />} />
         <Route path="/ticket" element={<Ticket />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/eticket" element={<ETicket />} />
         
 
       </Routes>

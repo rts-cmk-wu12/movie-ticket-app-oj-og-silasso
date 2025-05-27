@@ -1,0 +1,77 @@
+.eticket {
+    padding: 1rem;
+    background-color: #1b1e25;
+    color: #ffffff;
+
+    &__main {
+        background-color: #1b1e25;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        position: relative;
+
+        .eticket__back-link {
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    &__back-link {
+        color: #ffffff;
+        font-size: 1.5rem;
+
+        svg {
+            width: 26px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &-content {
+        width: 90%;
+        margin: 0 auto;
+    &__instruction {
+        &-title {
+        }
+        &-text {}
+    }
+
+    &__details {}
+
+    &__ticket {
+        background-color: #ffffff;
+        border-radius: 0 0 20px 20px;
+    }
+
+    &__film {
+        &-title {}
+        &-name {}
+    }
+
+    &__info {
+        &-list {} 
+        &-item {
+            color: #717171;
+            list-style: none;
+        }
+        &-value {
+            color: #000000;
+        }
+    }
+
+    &__qrcode {
+        background-color: #ffffff;
+        border-radius: 20px 20px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+}
