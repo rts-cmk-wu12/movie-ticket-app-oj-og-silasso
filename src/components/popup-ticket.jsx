@@ -1,7 +1,13 @@
 import IconDownload from '../pic/icons/icon-downloaded.svg?react';
 import '../style/popup.scss';
 
-function PopupTicket() {
+function PopupTicket({ setShowPopup }) {
+   const handleBackToHome = () => {
+      setShowPopup(false);
+    
+      window.location.href = '/';
+   };
+
    return (
       <footer>
          <section className="popup-ticket">
@@ -12,9 +18,10 @@ function PopupTicket() {
                   wealthy family owns estates and grounds.
                   When she was a teenager. Read More</p>
 
-               <button className="popup-ticket__button">Back To Home</button>
+               <button className="popup-ticket__button" onClick={handleBackToHome}>
+                  Back To Home
+               </button>
             </div>
-
          </section>
       </footer>
    );

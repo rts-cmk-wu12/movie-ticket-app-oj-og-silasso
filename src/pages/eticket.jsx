@@ -4,6 +4,7 @@ import '../style/popup.scss';
 import Navbar from "../components/navbar";
 import { useState } from "react";
 import PopupTicket from "../components/popup-ticket";
+import Pdf from "../components/pdf";
 
 function ETicket() {
     const [showPopup, setShowPopup] = useState(false);
@@ -79,8 +80,7 @@ function ETicket() {
                             </svg>
 
                         </div>
-                        <div className="eticket-content__button">  <button className="download-button" onClick={setShowPopup , }>Download E-Ticket</button></div>
-
+                   <Pdf setShowPopup={setShowPopup} />
                     </section>
                 </main>
             </div>
@@ -89,7 +89,7 @@ function ETicket() {
             </footer>
 
             <div className={`popup-container ${showPopup ? 'show' : ''}`}>
-                {showPopup && <PopupTicket />}
+                {showPopup && <PopupTicket setShowPopup={setShowPopup} />}
             </div>
         </>
     );
