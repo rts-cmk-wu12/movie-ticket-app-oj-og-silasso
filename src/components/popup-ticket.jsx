@@ -1,10 +1,11 @@
-import IconSuccess from '../pic/ticketpopup.svg?react';
+import IconDownload from '../pic/icons/icon-downloaded.svg?react';
 import '../style/popup.scss';
+
 function PopupTicket() {
    return (
       <footer>
          <section className="popup-ticket">
-            <IconSuccess className="popup-ticket__icon" />
+            <IconDownload className="popup-ticket__icon" />
             <div className="popup-ticket__content">
                <h2 className="popup-ticket__title">Your ticket has been downloaded</h2>
                <p className="popup-ticket__text">Adele is a Scottish heiress whose extremely

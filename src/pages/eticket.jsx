@@ -79,7 +79,7 @@ function ETicket() {
                             </svg>
 
                         </div>
-                        <div className="eticket-content__button">  <button className="download-button" onClick={setShowPopup}>Download E-Ticket</button></div>
+                        <div className="eticket-content__button">  <button className="download-button" onClick={setShowPopup , }>Download E-Ticket</button></div>
 
                     </section>
                 </main>
