@@ -1,5 +1,7 @@
 import IconSuccess from '../pic/icons/IconSuccess.svg?react';
 import '../style/popup.scss';
+import { Link } from 'react-router-dom';
+
 function PopupPayment() {
    return (
       <footer>
@@ -10,7 +12,7 @@ function PopupPayment() {
                <p className="popup-payment__text">Adele is a Scottish heiress whose extremely
                   wealthy family owns estates and grounds.
                   When she was a teenager. Read More</p>
-               <a href="/eticket" className="popup-payment__button">See E-Ticket</a>
+               <Link to="/eticket" className="popup-payment__button">See E-Ticket</Link>
             </div>
          </section>
       </footer>
