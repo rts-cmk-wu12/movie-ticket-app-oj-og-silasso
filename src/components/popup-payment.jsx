@@ -12,7 +12,7 @@ function PopupPayment() {
                <p className="popup-payment__text">Adele is a Scottish heiress whose extremely
                   wealthy family owns estates and grounds.
                   When she was a teenager. Read More</p>
-               <Link to="/eticket" className="popup-payment__button">See E-Ticket</Link>
+               <Link to="eticket" className="popup-payment__button">See E-Ticket</Link>
             </div>
          </section>
       </footer>

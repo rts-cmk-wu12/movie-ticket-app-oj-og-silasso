@@ -1,6 +1,13 @@
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import '../style/settings.scss'
 import Navbar from "../components/navbar";
+import bruger from "../pic/bruger.png";
+import personaldata from "../pic/personaldata.svg";
+import emailpayment from "../pic/emailpayment.svg";
+import deactiveaccount from "../pic/deactiveaccount.svg";
+import notification from "../pic/notification.svg";
+import yourticket from "../pic/yourticket.svg";
+import logout from "../pic/logout.svg";
 
 function Settings() {
     return (
@@ -15,7 +22,7 @@ function Settings() {
                 <section className="settings__section">
                     <article className="settings__profile settings__article">
                         <div className="settings__profile-info">
-                            <img src="src/pic/bruger.png" alt="bruger" className="settings__profile-image" />
+                            <img src={bruger} alt="bruger" className="settings__profile-image" />
                             <h3 className="settings__profile-name">Miles Morales
                                 <span className="settings__profile-role">Film Hunter</span>
                             </h3>
@@ -26,21 +33,21 @@ function Settings() {
                         <h2 className="settings__account-title">Account</h2>
                         <div className="settings__menu-item">
                             <div className="settings__menu-content">
-                                <img src="src/pic/personaldata.svg" alt="Personal data icon" className="settings__menu-icon" />
+                                <img src={personaldata} alt="Personal data icon" className="settings__menu-icon" />
                                 <p className="settings__menu-text">Personal Data</p>
                             </div>
                             <IoIosArrowForward className="settings__arrow" />
                         </div>
                         <div className="settings__menu-item">
                             <div className="settings__menu-content">
-                                <img src="src/pic/emailpayment.svg" alt="Email and payment icon" className="settings__menu-icon" />
+                                <img src={emailpayment} alt="Email and payment icon" className="settings__menu-icon" />
                                 <p className="settings__menu-text">Email & Payment</p>
                             </div>
                             <IoIosArrowForward className="settings__arrow" />
                         </div>
                         <div className="settings__menu-item">
                             <div className="settings__menu-content">
-                                <img src="src/pic/deactiveaccount.svg" alt="Deactivate account icon" className="settings__menu-icon" />
+                                <img src={deactiveaccount} alt="Deactivate account icon" className="settings__menu-icon" />
                                 <p className="settings__menu-text">Deactive Account</p>
                             </div>
                             <IoIosArrowForward className="settings__arrow" />
@@ -50,21 +57,21 @@ function Settings() {
                         <h2 className="settings__privacy-title">Privacy & Policy</h2>
                         <div className="settings__menu-item">
                             <div className="settings__menu-content">
-                                <img src="src/pic/notification.svg" alt="Notification icon" className="settings__menu-icon" />
+                                <img src={notification} alt="Notification icon" className="settings__menu-icon" />
                                 <p className="settings__menu-text">Notification</p>
                             </div>
                             <IoIosArrowForward className="settings__arrow" />
                         </div>
                         <div className="settings__menu-item">
                             <div className="settings__menu-content">
-                                <img src="src/pic/yourticket.svg" alt="Ticket icon" className="settings__menu-icon" />
+                                <img src={yourticket} alt="Ticket icon" className="settings__menu-icon" />
                                 <p className="settings__menu-text">Your Ticket</p>
                             </div>
                             <IoIosArrowForward className="settings__arrow" />
                         </div>
                         <div className="settings__menu-item">
                             <div className="settings__menu-content">
-                                <img src="src/pic/logout.svg" alt="Logout icon" className="settings__menu-icon" />
+                                <img src={logout} alt="Logout icon" className="settings__menu-icon" />
                                 <p className="settings__menu-text">Logout</p>
                             </div>
                             <IoIosArrowForward className="settings__arrow" />
