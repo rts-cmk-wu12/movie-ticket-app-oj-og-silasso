@@ -1,4 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/t9fNoC-R)
 
 # 🎬 Movie Ticket App
 
@@ -52,4 +51,4 @@ Formålet med opgaven er at:
 ## 🌐 Live Demo
 
 > Indsæt link til jeres hostede version her, fx:
-> [https://biografbooking.netlify.app](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+> [Her er den :)](https://movie-ticket-app-oj-og-silasso.onrender.com)
