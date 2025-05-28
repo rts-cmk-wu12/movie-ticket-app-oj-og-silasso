@@ -21,7 +21,7 @@ function App() {
         <Route path="/bookmarks" element={<Bookmark />} />
         <Route path="/ticket" element={<Ticket />} />
         <Route path="/checkout" element={<Checkout />} />
-        <Route path="/eticket/*" element={<ETicket />} />
+        <Route path="/eticket" element={<ETicket />} />
         
 
       </Routes>

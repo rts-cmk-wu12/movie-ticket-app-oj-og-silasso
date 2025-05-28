@@ -3,7 +3,7 @@ import Navbar from "../components/navbar";
 import Comingsoon from "../components/comingsoon";
 import Cinema from "../components/cinemas";
 import Search from '../components/search';
-
+import bruger from '../pic/bruger.png';
 
 function Forside() {
     return (
@@ -14,7 +14,7 @@ function Forside() {
                         <p>Welcome Back,</p>
                         <h1>Osysyy</h1>
                     </div>
-                    <img src="src\pic\bruger.png" alt="" />
+                    <img src={bruger} alt="" />
                 </div>
                 <Search />
                 <div className="movie-container">
